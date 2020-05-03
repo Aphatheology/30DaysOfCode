@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 50vw;
+}
+
+.container .image {
+    width: 30vw;
+    background-image: url("Login_v18~2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px 5% 0px 0px;
+}
+
+.container .login {
+    width: 25vw;
+    margin: 50px 5% 50px 0px;
+    background-color: white;
+}
+
+.container .login h2, p {
+    text-align: center;
+}
+
+input[type="email"], input[type="password"] {
+    display: block;
+    padding: 15px 7.5px;
+    outline: none;
+    border: 1px solid rgb(26, 10, 114);
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+input[type="email"]:placeholder-shown , input[type="password"]:placeholder-shown {
+    border: 1px solid rgb(243, 232, 232);
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: rgb(26, 10, 114);
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0px;
+    margin: 10px 0px 25px;
+}
+
+@media screen and (max-width: 720px) {
+    .container {
+        display: block;
+        width: 90vw;
+    }
+    
+    .image {
+        display: none;
+    }
+
+    .container .login {
+        width: 90%;
+        margin-left: auto;
+    }
+}
