@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 - Login and Register Page Challenge</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/d0bc77ca84.js" crossorigin="anonymous" ></script>
+
+    <script src="script.js" defer async></script>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            
+        </div>
+
+        <div class="login">
+            <section>
+            <button id="signin" onclick="loginFunction()">Sign In</button>
+            <button id="signup" onclick="registerFunction()">Sign Up</button>
+        </section>
+
+
+            <form id="login" action="#">
+                <h2>Login</h2>
+                
+                <input type="email" placeholder="Email" required/>
+                
+                <input type="password" placeholder="Password" required />
+                
+                <input type="checkbox" /> <span style="color: grey;">Remember me</span>
+                
+                <a class="forgot" href="#">Forgot password?</a>
+                
+                <input type="submit" value="Login" />
+
+        
+            </form>
+        
+            <form id="register" action="#">
+                <h2>Register an Account</h2>
+                
+                <input type="text" placeholder="Enter Your First Name" required/>
+
+                <input type="text" placeholder="Enter Your Last Name" required/>
+
+                <input type="email" placeholder="Email" required/>
+                
+                <input type="number" placeholder="Enter Your Phone Number" required/>
+
+                <input type="password" placeholder="Password" required/>
+                
+                <input type="submit" value="Register" />
+        </div>
+    </div>
+    
+</body>
+</html>
