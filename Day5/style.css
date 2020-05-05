@@ -42,17 +42,16 @@ section#thebook {
     margin: auto;
     width: 90vw;
 }
+
 #thebook .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: 1px solid blue;
-    
 }
 
 #thebook .container div {
     width: 40%;
-    border: 1px solid blue;
+    
 }
 
 #thebook .container .bookdetails {
@@ -62,7 +61,7 @@ section#thebook {
 
 #thebook .container .bookdetails h1 {
     font-size: 2rem;
-    /* line-height: 150%; */
+    
     text-align: center;
     margin-bottom: 25px;
 }
@@ -92,7 +91,6 @@ section#thebook {
     justify-content: space-around;
     position: relative;
     top: 25vh;
-    border: 1px solid blue;
     width: 90vw;
     margin: auto;
 }
@@ -121,7 +119,7 @@ section#thebook {
 #testimonies {
     position: relative;
     top: 25vh;
-    border: 1px solid blue;
+    
     width: 90vw;
     margin: 15% auto 5%;
 }
@@ -146,7 +144,7 @@ section#thebook {
 #buy {
     width: 100vw;
     margin: auto;
-    border: 1px solid blue;
+    
     padding: 15px 10px;
     text-align: center;
     position: fixed;
