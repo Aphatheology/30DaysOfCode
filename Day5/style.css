@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    word-spacing: 1.5px;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    text-align: center;
+    background-color: teal;
+    padding: 10px 0px;
+    z-index: 5;
+}
+
+header a {
+    display: inline-block;
+    padding: 10px;
+    margin: 0px 5px;
+    text-decoration: none;
+    
+    color: white;
+    font-weight: bolder;
+}
+
+header a:hover {
+    background-color: white;
+    color: teal;
+}
+
+section#thebook {
+    position: relative;
+    top: 15vh;
+    margin: auto;
+    width: 90vw;
+}
+#thebook .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid blue;
+    
+}
+
+#thebook .container div {
+    width: 40%;
+    border: 1px solid blue;
+}
+
+#thebook .container .bookdetails {
+    padding: 15px;
+    width: 60%;
+}
+
+#thebook .container .bookdetails h1 {
+    font-size: 2rem;
+    /* line-height: 150%; */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#thebook .container .bookdetails h3 {
+    font-size: 1.8rem;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#thebook .container .bookdetails p {
+    font-size: 1.5rem;
+    line-height: 150%;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+#thebook .container .bookimage img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.authorcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 25vh;
+    border: 1px solid blue;
+    width: 90vw;
+    margin: auto;
+}
+
+.authorcontainer img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.authorcontainer .authordetails {
+    margin-top: 15%;
+    text-align: center;
+    padding: 0px 15px;
+    line-height: 150%;
+
+}
+
+.authorcontainer .authordetails * {
+    margin: 10px 0px;
+}
+
+.authorcontainer .authorimage {
+    width: 35%;
+}
+
+#testimonies {
+    position: relative;
+    top: 25vh;
+    border: 1px solid blue;
+    width: 90vw;
+    margin: 15% auto 5%;
+}
+#testimonies .testimonycontainer {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#testimonies h1 {
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px;
+}
+
+#testimonies img {
+    max-width: 100%;
+}
+
+#buy {
+    width: 100vw;
+    margin: auto;
+    border: 1px solid blue;
+    padding: 15px 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    z-index: 4;
+    text-align: center;
+    max-height: 30vh;
+    background-color: teal;
+
+}
+
+#buy h2 {
+    margin: 5px 15px 10px;
+    color: white;
+    font-weight: bolder;
+    display: inline-block;
+
+}
+
+#buy a {
+    display: inline-block;
+    padding: 15px 50px;
+    background-color: white;
+    color: teal;
+    border: 3px solid teal;
+    border-radius: 25px;
+    font-weight: 700;
+    outline: none;
+    text-decoration: none;
+}
+
+#buy a:hover {
+    background-color: teal;
+    color: white;
+    font-weight: 900;
+    border: 3px solid white;
+}
+
+
+@media screen and (max-width: 720px) {
+
+    .authorcontainer {
+        display: block;
+        text-align: center;
+    }
+
+    .authorcontainer .authorimage {
+        text-align: center;
+        margin: auto;
+    }
+
+    .authorcontainer .authordetails {
+        margin: 5% 0%;
+    }
+}
