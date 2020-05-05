@@ -13,7 +13,7 @@ body {
 
 header {
     width: 100vw;
-    height: 10vh;
+    max-height: 15vh;
     position: fixed;
     text-align: center;
     background-color: teal;
@@ -78,6 +78,8 @@ section#thebook {
     line-height: 150%;
     margin-bottom: 15px;
     text-align: justify;
+    letter-spacing: normal;
+    word-spacing: normal;
 }
 
 #thebook .container .bookimage img {
