@@ -46,7 +46,7 @@ nav a:hover {
     min-height: 50vh;
     padding: 25px;
     background-color: tan;
-    top: 10vh;
+    top: 25vh;
     position: relative;
     margin: 0% auto 120px;
 }
@@ -71,7 +71,7 @@ nav a:hover {
 .hero a {
     display: block;
     padding: 25px;
-    max-width: 50%;
+    
     margin: 25px auto;
     border: 2px solid rgb(211, 149, 68);
     background-color: rgb(197, 134, 52);
@@ -157,7 +157,7 @@ nav a:hover {
 
 footer {
     width: 100vw;
-    min-height: 50vh;
+    
     background-color: rgb(202, 142, 64);
     color: white;
     border: 1px solid rgb(202, 142, 64);
