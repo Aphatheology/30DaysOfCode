@@ -64,6 +64,10 @@ text-align:center;
 	margin-top: 100px;
 	padding-bottom: 15px;
 }
+
+.cen-bar1 img {
+max-width: 100%;
+}
 /* .cen-bar1 {
 	display: flex;
 	justify-content: center;
