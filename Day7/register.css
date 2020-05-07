@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    min-width: 50vw;
+    min-height: 90vh;
+    scroll-behavior: smooth;
+    margin: 25px 0px;
+}
+
+.container .image {
+    width: 50vw;
+    max-height: 90vh;
+    background-image: url("flyer.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 5% 0px 0px;
+    /* overflow: hidden; */
+    
+}
+
+.container .image img {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+}
+
+.container .login {
+    width: 30vw;
+    margin: 0px;
+    background-color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    outline: none;
+    border: none;
+    padding: 15px;
+    background-color: rgb(212, 140, 44);
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin: 0px 5px;
+}
+
+button:hover {
+    color:  rgb(212, 140, 44);
+    background-color: white;
+    border: 2px solid  rgb(212, 140, 44);
+}
+
+#register {
+    display: block;
+}
+
+.container .login h2 {
+    text-align: center;
+    color: rgb(212, 140, 44);
+}
+
+input[type="email"], input[type="text"], input[type="number"], input[type="password"] {
+    display: block;
+    padding: 15px 7.5px;
+    outline: none;
+    border: 1px solid rgb(212, 140, 44);
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px 0px;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+
+input[type="email"]:placeholder-shown , input[type="text"]:placeholder-shown, input[type="number"]:placeholder-shown, input[type="password"]:placeholder-shown {
+    border: 1px solid rgb(243, 232, 232);
+}
+
+a.forgot {
+    text-decoration: none;
+    color: grey;
+    float: right;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: rgb(212, 140, 44);
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0px;
+    margin: 10px 0px 25px;
+}
+
+
+input[type="submit"]:hover {
+    color:  rgb(212, 140, 44);
+    background-color: white;
+    border: 2px solid  rgb(212, 140, 44);
+}
+
+@media screen and (max-width: 720px) {
+    body
+    .container {
+        display: block;
+        width: 90vw;
+        margin: auto;
+        padding-top: 5%;
+    }
+
+    .container .image {
+        display: flex;
+        justify-content: center;
+        
+        max-width: 90vw;
+        margin: auto;
+    }
+    .container .image img {
+        display: block;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+    .container .login {
+        width: 90%;
+        margin: auto;
+    }
+}
