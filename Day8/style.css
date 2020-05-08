@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html, body {
+    height: 100%;
+}
+
+
+.parallax0 {
+    background-image: url("https://res.cloudinary.com/aphatheology/image/upload/v1588975437/mark-harpur-K2s_YE031CA-unsplash_if0hkm.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax0 h1 {
+    text-align: center;
+    padding: 25px;
+    font-size: 3rem;
+    max-width: 75%;
+    margin: auto;
+    background-color: rgb(255, 255, 255, 0.5);
+    color: rgb(224, 18, 87);
+    overflow-wrap: break-word;
+}
+
+
+.parallax1 {
+    background-image: url("https://res.cloudinary.com/aphatheology/image/upload/v1588975440/pietro-de-grandi-T7K4aEPoGGk-unsplash_dblbgn.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax1 h1 {
+    text-align: center;
+    padding: 25px;
+    font-size: 3rem;
+    max-width: 75%;
+    margin: auto;
+    background-color: rgb(255, 255, 255, 0.7);
+    color: teal;
+    overflow-wrap: break-word;
+}
+
+.parallax2 {
+    background-image: url("https://res.cloudinary.com/aphatheology/image/upload/v1588975408/luca-bravo-zAjdgNXsMeg-unsplash_tiupfy.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax2 h1 {
+    text-align: center;
+    padding: 25px;
+    font-size: 3rem;
+    max-width: 75%;
+    margin: auto;
+    background-color: rgb(255, 255, 255, 0.5);
+    color: rgb(3, 44, 7);
+    overflow-wrap: break-word;
+}
+
+.hero {
+    padding: 50px auto;
+    width: 100vw;
+    background-color: rgb(1, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    text-align: center;
+    padding: 25px;
+    font-size: 3rem;
+    max-width: 75%;
+    margin: auto;
+    /* background-color: rgb(255, 255, 255, 0.5); */
+    color: rgb(255, 255, 255);
+    overflow-wrap: break-word;
+}
+
+a {
+    color: inherit;
+}
