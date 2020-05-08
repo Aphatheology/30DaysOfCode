@@ -9,20 +9,25 @@ html, body {
     height: 100%;
 }
 
+.container {
+    display: none;
+    flex-direction: column;
+}
 
-.parallax0 {
+.parallax0, .parallax00 {
     background-image: url("https://res.cloudinary.com/aphatheology/image/upload/v1588975437/mark-harpur-K2s_YE031CA-unsplash_if0hkm.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.parallax0 h1 {
+.parallax0 h1, .parallax00 h1 {
     text-align: center;
     padding: 25px;
     font-size: 3rem;
@@ -34,19 +39,20 @@ html, body {
 }
 
 
-.parallax1 {
+.parallax1, .parallax10 {
     background-image: url("https://res.cloudinary.com/aphatheology/image/upload/v1588975440/pietro-de-grandi-T7K4aEPoGGk-unsplash_dblbgn.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.parallax1 h1 {
+.parallax1 h1, .parallax10 h1 {
     text-align: center;
     padding: 25px;
     font-size: 3rem;
@@ -57,19 +63,20 @@ html, body {
     overflow-wrap: break-word;
 }
 
-.parallax2 {
+.parallax2, .parallax20 {
     background-image: url("https://res.cloudinary.com/aphatheology/image/upload/v1588975408/luca-bravo-zAjdgNXsMeg-unsplash_tiupfy.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.parallax2 h1 {
+.parallax2 h1, .parallax20 h1 {
     text-align: center;
     padding: 25px;
     font-size: 3rem;
@@ -80,7 +87,7 @@ html, body {
     overflow-wrap: break-word;
 }
 
-.hero {
+.hero, .hero0 {
     padding: 50px auto;
     width: 100vw;
     background-color: rgb(1, 71, 71);
@@ -89,7 +96,7 @@ html, body {
     align-items: center;
 }
 
-.hero h1 {
+.hero h1, .hero0 h1 {
     text-align: center;
     padding: 25px;
     font-size: 3rem;
@@ -102,4 +109,22 @@ html, body {
 
 a {
     color: inherit;
+}
+
+@media screen and (max-width: 800px) {
+    .hero h1, .parallax2 h1, .parallax1 h1, .parallax0 h1 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .parallax00, .parallax10, .parallax20, .hero0 {
+        display: none;
+    }
+
+    
 }
