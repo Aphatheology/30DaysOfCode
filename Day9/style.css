@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 20px;
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-wrap: break-word;
+    
+}
+
+header {
+    width: 100%;
+    display: block;
+    background-color: white;
+    
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1% 5%;
+    /* padding: 5%; */
+}
+
+/* header .container div {
+    border: 1px solid blue;
+} */
+
+header .container .logo {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+header .container .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+header .container .logo h3 {
+    margin-left: 3%;
+}
+
+header .navbar {
+    width: 50%;
+}
+
+header  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header  ul li {
+    float: left;
+    
+}
+
+/* header ul li:last-child {
+    padding-left: 10%;
+} */
+
+header ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    
+
+    
+
+}
+
+header ul li a:hover {
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+}
+
+.order {
+    float: right; 
+    border: 2px solid red;
+    
+}
+
+.order:hover {
+    
+    background-color: red;
+    
+}
+
+.action, .started {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border: 2px solid red;
+    margin: 20px auto 0px;
+    text-align: center;
+
+    font-weight: bolder;
+    background-color: red;
+}
+
+.action:hover, .started:hover {
+    border: 2px solid red;
+    background-color:white;
+    color: red;
+}
+
+
+
+.get-started {
+    width: 100%;
+    /* max-height: 70vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("food3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+    text-align: center;
+    color: red;
+    font-weight: 900;
+
+}
+
+.get-started div {
+    
+    padding: 2.5% 20%;
+    text-align: center;
+    color: white;
+    width: 80%;
+    background-color: rgba(253, 0, 0, 0.4);
+}
+
+.get-started div h1 {
+    margin: 5% 0px 0%;
+    font-size: 2rem;
+}
+
+.get-started div h3, .get-started div p {
+    font-size: 1.5rem;
+}
+
+.get-started div hr {
+    margin: 5% auto;
+    width: 70%;
+    text-align: center;
+    
+}
+
+
+
+.food-samples {
+    width: 90vw;
+    height: 50vh;
+    margin: 5% auto;
+    
+    overflow: hidden;
+}
+
+.food-samples h2 {
+    margin: 15px;
+}
+
+#slider {
+    overflow: hidden;
+    width: 75vw;
+    
+    margin: auto;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 10s slider infinite;
+}
+#slider figure img {
+    width: 20%;
+    max-height: 50%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+
+
+.our-services {
+    width: 100vw;
+    margin: 5% auto;
+    
+}
+.our-services .services-container {
+    
+    display: flex;
+    width: 100vw;
+    margin: 2.5% auto;
+    /* max-height: 90vh; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 2%;
+    position: relative;
+    
+    
+}
+
+.services-container .services {
+    box-sizing: border-box;
+    width: 33%;
+    
+    margin: 2.5%;
+    text-align: center;
+    padding: 2.5% 5%;
+}
+
+.services-container .red {
+    border-bottom: solid 7.5px red;
+}
+
+.services-container .teal {
+    border-bottom: solid 7.5px teal;
+    margin-top: 20%;
+    
+}
+
+.services-container .services img {
+    width: 75px;
+    height: 75px;
+}
+
+.services-container .services h3 {
+    margin: 10% 0%;
+    font-weight: bolder;
+}
+
+
+section h2 {
+    text-align: center;
+}
+
+footer {
+    width: 100vw;
+    /* max-height: 75vh; */
+    background-color: teal;
+    color: white;
+   
+    margin-top: 10%;
+    padding: 5% 5% 0%;
+}
+
+footer .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+/* footer .footer-container .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+} */
+
+
+
+footer .footer-container div h4 {
+    margin-bottom: 25px;
+}
+ footer .footer-container  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer .footer-container li a {
+    text-decoration: none;
+    display: block;
+    padding: 2.5%;
+    color: white;
+    
+}
+
+footer .footer-container li a:hover {
+    background-color: white;
+    color: teal;
+    font-weight: bolder;
+}
+
+footer .footer-container .subscribe {
+    width: 40%;
+    
+} 
+
+footer .footer-container .subscribe input[type="email"] {
+    display: block;
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    font-size: inherit;
+    font-weight: bolder;
+    color: teal;
+
+
+}
+
+footer .footer-container .subscribe input[type="submit"] {
+    display: block;
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: inherit;
+    font-weight: bolder;
+}
+
+footer .last {
+    float: left;
+    position: relative;
+    text-align: center;
+    bottom: 0%;
+    margin-bottom: 0px;
+    margin-left: 5% ;
+    margin-top: 2.5%;
+}
+
+@media screen and (max-width: 800px) {
+    footer .footer-container {
+        display: block;
+    }
+
+    footer div {
+        margin: 25px auto;
+    }
+
+    footer .footer-container .subscribe {
+        width: 80%;
+    }
+
+    .our-services .services-container {
+        display: block;
+    }
+
+    .our-services .services-container div {
+        width: 75%;
+        margin: auto;
+
+    }
+
+    
+}
+
+
+
