@@ -18,11 +18,11 @@
 
             <div class="navbar">
                 <ul>
-                    <li> <a href="#">Menu </a> </li>
+                    <li> <a href="#menusec">Menu </a> </li>
                     <li> <a href="#">Blog </a> </li>
                     <li> <a href="#">About </a> </li>
                     <li> <a href="#">Contact </a> </li>
-                    <li class="order"> <a href="#">Place Order </a> </li>
+                    <li class="ordernav"> <a href="#menusec">Place Order </a> </li>
                 </ul>
             </div>
 
@@ -39,7 +39,6 @@
             <h3>We have it all and at the best prices! Place your order now!</h3>
             <button class="started">Get Started</button>
         </div>
-        <!-- <button class="started">Get Started</button> -->
     </section>
 
     <section class="food-samples">
@@ -54,6 +53,82 @@
             </figure>
         </div>
     </section>
+
+    <section id="menusec" class="our-menu">
+        <h2>OUR MENU</h2>
+        <div class="menu">
+        <div class="menuitem">
+            <img src="food2.jpg" alt="Eba">
+            <h2>Delicious Food 1</h2>
+            <h3>PRICE:</h3>
+            <h3>$25</h3>
+            <button id="order1" class="order">ORDER</button>
+        </div>
+
+        <div class="menuitem">
+            <img src="food1.jpg" alt="Eba">
+            <h2>Delicious Food 1</h2>
+            <h3>PRICE:</h3>
+            <h3>$25</h3>
+            <button id="order2" class="order">ORDER</button>
+        </div>
+
+        <div class="menuitem">
+            <img src="food3.jpg" alt="Eba">
+            <h2>Delicious Food 1</h2>
+            <h3>PRICE:</h3>
+            <h3>$25</h3>
+            <button id="order3" class="order">ORDER</button>
+        </div>
+
+        <div class="menuitem">
+            <img src="food4.jpg" alt="Eba">
+            <h2>Delicious Food 1</h2>
+            <h3>PRICE:</h3>
+            <h3>$25</h3>
+            <button id="order4" class="order">ORDER</button>
+        </div>
+
+        <div class="menuitem">
+            <img src="food5.jpg" alt="Eba">
+            <h2>Delicious Food 1</h2>
+            <h3>PRICE:</h3>
+            <h3>$25</h3>
+            <button id="order5" class="order">ORDER</button>
+        </div>
+
+        <div class="menuitem">
+            <img src="food1.jpg" alt="Eba">
+            <h2>Delicious Food 1</h2>
+            <h3>PRICE:</h3>
+            <h3>$25</h3>
+            <button id="order6" class="order">ORDER</button>
+
+            
+        </div>
+    </div>
+    </section>
+
+    <div class="placeorder">
+        <form action="index.html">
+            <p id="close">&times;</p>
+            <h2>Place Your Order Now</h2>
+
+            <label for="name">Your Full Name</label>
+            <input id="name" type="text" placeholder="Enter Your Name" />
+
+            <label for="number">Your Phone Number</label>
+            <input id="number" type="number" placeholder="Enter Your Phone Number" />
+
+            <label for="email">Your Email</label>
+            <input id="email" type="text" placeholder="Enter Your Email" />
+
+            <label for="address">Your Address (For Delivery)</label>
+            <input id="address" type="text" placeholder="Enter Your Delivery Address" />
+
+            <input type="submit" value="Place Order" />
+        </form>
+    </div>
 
 
     
@@ -72,14 +147,14 @@
                 <img src="food2.jpg" alt="Doorstep Delivery">
                 <h3>Order for Home Delivery</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a illum eius facere nisi natus expedita aliquid esse voluptates, quos beatae cumque perspiciatis amet reprehenderit deserunt numquam quo odio maiores.</p>
-                <a class="action" href="#">Order Now</a>
+                <a class="action" href="#menusec">Order Now</a>
             </div>
 
             <div class="services red">
                 <img src="food3.jpg" alt="Buy Food for Someone">
                 <h3>Buy Food for Someone Anonymously</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a illum eius facere nisi natus expedita aliquid esse voluptates, quos beatae cumque perspiciatis amet reprehenderit deserunt numquam quo odio maiores.</p>
-                <a class="action" href="#">Buy as Anon</a>
+                <a class="action" href="#menusec">Buy as Anon</a>
             </div>
         </div>
     </section>
@@ -90,8 +165,8 @@
                 <div class="links">
                     <h4>Coders Food</h4>
                     <ul>
-                        <li> <a href="#">About Us</a> </li>
-                        <li> <a href="#">Menu</a> </li>
+                        <li> <a href="#menusec">Menu</a> </li>
+                        <li> <a href="#">About Us</a> </li>                        
                         <li> <a href="#">Contact Us</a> </li>
                         <li> <a href="#">Blog</a> </li>
                     </ul>
@@ -99,7 +174,7 @@
 
                 <div class="links">
                     <h4>CONTACT</h4>
-                    <p>Address Line ! <br>
+                    <p>Restaurant Address Line ! <br>
                         Street, State.
                     </p> <br>
                     <p>Phone: 234(1) 80 337733</p>
@@ -115,9 +190,9 @@
             </div>
         </div>
 
-        <div class="last">Made With LOVE By:</div>
-        <div class="last">Abdulkareem Mustapha | Aphatheology</div>
+        <div class="last">Made with LOVE by: <br> <a href="http://github.com/aphatheology" target="_blank">Abulkareem Mustapha | Aphatheology</a></div>
     </footer>
     
+    <script src="script.js"></script>
 </body>
 </html>

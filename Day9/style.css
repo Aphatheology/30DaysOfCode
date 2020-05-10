@@ -7,18 +7,16 @@
 body {
     width: 100vw;
     height: 100vh;
-    font-size: 20px;
     overflow-x: hidden;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
     overflow-wrap: break-word;
-    
 }
 
 header {
     width: 100%;
     display: block;
     background-color: white;
-    
 }
 
 header .container {
@@ -26,12 +24,7 @@ header .container {
     flex-direction: row;
     justify-content: space-between;
     margin: 1% 5%;
-    /* padding: 5%; */
 }
-
-/* header .container div {
-    border: 1px solid blue;
-} */
 
 header .container .logo {
     display: flex;
@@ -64,20 +57,12 @@ header  ul li {
     
 }
 
-/* header ul li:last-child {
-    padding-left: 10%;
-} */
-
 header ul li a {
     display: block;
     padding: 15px;
     text-decoration: none;
     color: black;
     font-weight: 700;
-    
-
-    
-
 }
 
 header ul li a:hover {
@@ -86,19 +71,24 @@ header ul li a:hover {
     font-weight: bolder;
 }
 
-.order {
+.ordernav {
     float: right; 
     border: 2px solid red;
-    
 }
 
-.order:hover {
-    
+.ordernav:hover {
     background-color: red;
     
 }
 
-.action, .started {
+.order {
+    width: 100%;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.action, .started, .order {
     display: block;
     padding: 15px;
     text-decoration: none;
@@ -107,22 +97,18 @@ header ul li a:hover {
     border: 2px solid red;
     margin: 20px auto 0px;
     text-align: center;
-
     font-weight: bolder;
     background-color: red;
 }
 
-.action:hover, .started:hover {
+.action:hover, .started:hover, .order:hover {
     border: 2px solid red;
     background-color:white;
     color: red;
 }
 
-
-
 .get-started {
     width: 100%;
-    /* max-height: 70vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,11 +119,9 @@ header ul li a:hover {
     text-align: center;
     color: red;
     font-weight: 900;
-
 }
 
 .get-started div {
-    
     padding: 2.5% 20%;
     text-align: center;
     color: white;
@@ -158,16 +142,13 @@ header ul li a:hover {
     margin: 5% auto;
     width: 70%;
     text-align: center;
-    
 }
 
-
-
 .food-samples {
-    width: 90vw;
+    width: 100vw;
     height: 50vh;
     margin: 5% auto;
-    
+    background-color: rgb(255, 0, 0, 0.4);
     overflow: hidden;
 }
 
@@ -181,6 +162,7 @@ header ul li a:hover {
     
     margin: auto;
 }
+
 #slider figure {
 	position: relative;
 	width: 500%;
@@ -188,6 +170,7 @@ header ul li a:hover {
 	left: 0;
 	animation: 10s slider infinite;
 }
+
 #slider figure img {
     width: 20%;
     max-height: 50%;
@@ -224,15 +207,152 @@ header ul li a:hover {
 	}
 }
 
+.our-menu {
+    width: 90vw;
+    
+    margin: auto;
+}
 
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+}
+
+.menuitem {
+    width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 15px 0px;
+    position: relative;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: white;
+}
+
+.menuitem h2 {
+    margin-top: 10px;
+}
+
+.menuitem h3 {
+    display: inline-block;
+}
+
+.menuitem:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menuitem::after {
+    content: '';
+    position: absolute;
+    z-index: -1; 
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    left: 15%; 
+    height: 100px;
+    bottom: 0;
+}
+
+.menuitem img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 300px;
+    width: 350px;
+    border: none;
+    outline: none;
+}
+
+.placeorder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0);
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    overflow: scroll;
+}
+
+.placeorder form {
+    background-color: white;
+    width: 50vh;
+    margin: auto;
+    padding: 25px;
+
+}
+
+.placeorder form #close {
+    text-align: right;
+    margin: 10px;
+    padding: 5px;
+    width: 25px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+
+.placeorder form #close:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;  
+}
+
+.placeorder label {
+    display: block;
+    margin: 10px 0px 5px;
+    text-align: left;
+    padding-left: 7.5px;
+}
+
+.placeorder input {
+    display: block;
+    padding: 15px 7.5px;
+    outline: none;
+    border: 1px solid teal;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5PX 0px 25px;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+
+input[type="email"]:placeholder-shown , input[type="text"]:placeholder-shown, input[type="number"]:placeholder-shown {
+    border: 1px solid rgb(243, 232, 232);
+}
+
+.placeorder input[type="submit"] {
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 0px;
+    margin: 15px 0px ;
+}
+
+.placeorder input[type="submit"]:hover {
+    color:  rgb(255, 0, 13);
+    background-color: white;
+    border: 2px solid  rgb(255, 0, 0);
+}
 
 .our-services {
     width: 100vw;
     margin: 5% auto;
-    
 }
+
 .our-services .services-container {
-    
     display: flex;
     width: 100vw;
     margin: 2.5% auto;
@@ -242,27 +362,14 @@ header ul li a:hover {
     align-items: flex-start;
     padding: 0px 2%;
     position: relative;
-    
-    
 }
 
 .services-container .services {
     box-sizing: border-box;
     width: 33%;
-    
     margin: 2.5%;
     text-align: center;
-    padding: 2.5% 5%;
-}
-
-.services-container .red {
-    border-bottom: solid 7.5px red;
-}
-
-.services-container .teal {
-    border-bottom: solid 7.5px teal;
-    margin-top: 20%;
-    
+    padding: 15px;
 }
 
 .services-container .services img {
@@ -275,18 +382,15 @@ header ul li a:hover {
     font-weight: bolder;
 }
 
-
 section h2 {
     text-align: center;
 }
 
 footer {
     width: 100vw;
-    /* max-height: 75vh; */
     background-color: teal;
     color: white;
-   
-    margin-top: 10%;
+   border: 1px solid teal;
     padding: 5% 5% 0%;
 }
 
@@ -294,21 +398,18 @@ footer .footer-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    margin-top: 2%;
 }
 
-/* footer .footer-container .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 50%;
-} */
 
-
+footer .footer-container  .links {
+    margin: 0px 10px;
+}
 
 footer .footer-container div h4 {
     margin-bottom: 25px;
 }
+
  footer .footer-container  ul {
     list-style-type: none;
     margin: 0px;
@@ -320,7 +421,6 @@ footer .footer-container li a {
     display: block;
     padding: 2.5%;
     color: white;
-    
 }
 
 footer .footer-container li a:hover {
@@ -331,7 +431,6 @@ footer .footer-container li a:hover {
 
 footer .footer-container .subscribe {
     width: 40%;
-    
 } 
 
 footer .footer-container .subscribe input[type="email"] {
@@ -344,8 +443,6 @@ footer .footer-container .subscribe input[type="email"] {
     font-size: inherit;
     font-weight: bolder;
     color: teal;
-
-
 }
 
 footer .footer-container .subscribe input[type="submit"] {
@@ -359,14 +456,15 @@ footer .footer-container .subscribe input[type="submit"] {
 }
 
 footer .last {
-    float: left;
-    position: relative;
     text-align: center;
-    bottom: 0%;
-    margin-bottom: 0px;
-    margin-left: 5% ;
-    margin-top: 2.5%;
+    width: 90%;
+    margin: 25px auto 25px;
 }
+
+.last a, .links a {
+    color: inherit;
+}
+
 
 @media screen and (max-width: 800px) {
     footer .footer-container {
@@ -378,7 +476,11 @@ footer .last {
     }
 
     footer .footer-container .subscribe {
-        width: 80%;
+        width: 100%;
+    }
+
+    footer .footer-container .links {
+        margin: 25px auto;
     }
 
     .our-services .services-container {
@@ -386,17 +488,15 @@ footer .last {
     }
 
     .our-services .services-container div {
-        width: 75%;
-        margin: auto;
-
+        width: 85%;
+        margin: 15px auto;
+        border: 2px solid red;
     }
 
-
-.get-started div {
-width: 95%;
-padding: 2.5%;
-}
-    
+    .get-started div {
+        width: 95%;
+        padding: 2.5%;
+    }
 }
 
 
