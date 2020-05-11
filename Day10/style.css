@@ -85,6 +85,11 @@ header img {
     header .container div:last-child {
         width: 95%;
      }
+
+#works .samplework .quiz {
+    height: auto;
+    overflow: hidden;
+}
 }
 
 #works, #contact {
