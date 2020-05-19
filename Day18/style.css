@@ -7,25 +7,162 @@
 body {
     width: 100vw;
     height: 100vh;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
+    font-size: 18px;
+    font-family: Sans;
+}
+
+header {
+    width: 100vw;
+    padding: 25px 10% 0px;
+    margin-bottom: 25px;
+}
+
+#menu {
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    background-color: rgba(7, 0, 0, 0.1);
+    position: absolute;
+    display: none;
+    justify-content: center; 
+    left: 0;
+    top: 10%;
+}
+
+#menu div {
+    background-color: hsl(220, 16%, 96%);
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px auto;
+    width: 75%;
+    margin: 30px auto;
+    border: 1px solid hsl(220, 16%, 96%);
+      
+}
+
+/* #hamburger:hover #menu {
+    display: block;
+} */
+
+#menu a {
+    display: inline-block;
+    min-width: 50%;
+    margin: 15px auto;
+    color: black;
+    text-decoration: none;
+}
+
+
+#menu a:hover {
+    cursor: pointer;
+    color: hsl(136, 65%, 51%);
+}
+
+.hero-section {
+    width: 100vw;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.hero-section div {
+    width: 100%;
+    max-height: 100%;
+    background-image: url('images/bg-intro-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero-section img {
+    text-align: center;
+    max-width: 90%;
+    max-height: 100%;
+    margin-top: -30%;
+}
+
+.hero-section h1 {
+    margin: 25px;
+    font-size: 3rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    line-height: 125%;
+}
+
+.invite {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 50px;
+    margin: 30px 0px 50px;
+    background: linear-gradient(to right, hsl(136, 65%, 51%) , hsl(233, 26%, 24%));
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.invite:hover {
+    color: hsl(136, 65%, 51%);
+}
+
+.why-choose {
+    width: 100vw;
+    padding: 50px 25px;
+    text-align: center;
+    background-color: hsl(220, 16%, 96%);
+
+}
+
+.why-choose h2 {
+    margin: 25px 0px;
+    font-size: 2rem;
+}
+
+.why-choose p {
+    font-size: 1.5rem;
+    color: hsl(233, 8%, 62%);
+    line-height: 125%;
+    padding: 0px 15px;
+}
+
+.choose-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choose-container div {
+    margin: 25px auto;
+}
+
+.choose-container div h3 {
+    font-size: 2rem;
+    margin: 25px 0px;
 }
 
 
 .articles {
     padding: 50px 10px;
     width: 100vw;
-    border: 1px solid blue;
-    background-color: hsl(0, 0%, 98%)
+    background-color: hsl(0, 0%, 98%);
 }
 
 .articles h2 {
     text-align: center;
-    margin-bottom: 10px;
+    margin: 25px auto;
+    font-size: 2rem;
 }
 
 .articles p.author {
-    color: wheat;
+    color: hsl(233, 8%, 62%);
     font-size: 0.75rem;
+}
+
+.articles p {
+    color: hsl(233, 8%, 62%);
 }
 
 .articles-container {
@@ -34,17 +171,25 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0px 10px;
-    border: 1px solid blue;
 }
 
 .articles-container div {
-    margin-top: 15px;
+    margin-top: 25px;
     border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 50px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.articles-container div p, .articles-container div h3 {
+    padding: 0px 40px;
+    margin: 10px auto;
 }
 
 .articles-container div img {
-    max-width: 100%;
+    width: 100%;
     height: 250px;
+    margin-bottom: 30px;
 }
 
 
@@ -54,7 +199,6 @@ footer {
     color: white !important;
     text-align: center;
     padding: 25px 0px;
-    
 }
 
 footer div a {
@@ -81,13 +225,15 @@ footer div:first-of-type a {
 
 
 @media screen and (min-width: 700px) {
-    .articles-container {
+    .articles-container , .choose-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
     .articles-container div {
+        /* width: 400px; */
         width: 25%;
+        margin: 50px 25px;
     }
 }
