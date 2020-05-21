@@ -18,6 +18,7 @@
 <body>
 
   <header>
+    <div class="mobile-header">
     <img src="images/logo.svg" alt="Easybank">
     
     <span id="hamburger"><img id="hamburger-icon" style="float: right;"  src="images/icon-hamburger.svg" alt="Menu">
@@ -26,30 +27,66 @@
       
       <div id="menu">
         <div>
-      <!-- <ul>
-        <li><a href="#"></a></li>
-      </ul> -->
-      <a href="index">Home</a>
+          <a href="index">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+    </div>
+  </span>
+</div>
+
+  </header>
+
+  <div class="desktop-header">
+    <div><img src="images/logo.svg" alt="Easybank"></div>
+      
+      <div class="links">
+      
+      <a href="#">Home</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
       <a href="#">Blog</a>
       <a href="#">Careers</a>
-    </div></div>
-  </span>
-    
-  </header>
+    </div>
+  
+    <div>
+    <a href="#" id="invite" class="invite">Request Invite</a></div>
+  
+  </div>
 
   <section class="hero-section">
-    <div><img src="images/image-mockups.png" alt=""></div>
-    <h1>Next generation digital banking</h1>
-    <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
-  for spending, saving, budgeting, investing, and much more.</p>
-  <a href="#" class="invite">Request Invite</a>
+
+      <div>
+        <img src="images/image-mockups.png" alt="">
+      </div>
+
+          <h1>Next generation digital banking</h1>
+          <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
+          for spending, saving, budgeting, investing, and much more.</p>
+          <a href="#" class="invite">Request Invite</a>
+      
+  </section>
+
+  <section class="hero">
+    <div class="herocontainer">
+      <div class="image">
+        <img src="images/image-mockups.png" alt="">
+      </div>
+
+      <div class="text">
+        <h1>Next generation digital banking</h1>
+        <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
+        for spending, saving, budgeting, investing, and much more.</p>
+        <a href="#" class="invite">Request Invite</a>
+      </div>
+    </div>
   </section>
 
   <section class="why-choose">
-    <h2>Why choose <br> Easybank?</h2>
-    <p>We leverage Open Banking to turn your bank account into your financial hub. Control 
+    <h2>Why choose Easybank?</h2>
+    <p class="choose">We leverage Open Banking to turn your bank account into your financial hub. Control 
   your finances like never before.</p>
 
   <div class="choose-container">
@@ -124,8 +161,9 @@
   </section>
 
   <footer>
+    <div class="footer-container">
     <div>
-      <a href="#"><img src="images/logo.svg" alt="Easybank"></a>
+      <a class="footerlogo" href="#"><img src="images/logo.svg" alt="Easybank"></a>
 <br>
       <a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a>
       <a href="#"><img src="images/icon-youtube.svg" alt="Youtube"></a>
@@ -147,10 +185,11 @@
       <a href="#">Privacy Policy</a>
     </div>
 
-    <div>
+    <div class="right">
       <a href="#" class="invite">Request Invite</a>
       <p class="footer"> © Easybank. All Rights Reserved</p>
     </div>
+  </div>
 <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

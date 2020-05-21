@@ -18,6 +18,10 @@ header {
     margin-bottom: 25px;
 }
 
+.desktop-header {
+    display: none;
+}
+
 #menu {
     width: 100vw;
     height: 100vh;
@@ -90,18 +94,25 @@ header {
 .hero-section p {
     font-size: 1.5rem;
     line-height: 125%;
+    width: 75vw;
+    margin: auto;
+}
+
+.hero { 
+    display: none;
 }
 
 .invite {
     display: inline-block;
-    padding: 20px 40px;
+    padding: 15px 30px;
     border-radius: 50px;
     margin: 30px 0px 50px;
     background: linear-gradient(to right, hsl(136, 65%, 51%) , hsl(233, 26%, 24%));
     color: white;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
+    text-align: center;
 }
 
 .invite:hover {
@@ -211,6 +222,7 @@ footer div a {
 
 footer div a:hover  {
     color: hsl(136, 65%, 51%);
+    fill: hsl(136, 65%, 51%);
 }
 
 footer div:first-of-type a {
@@ -225,15 +237,162 @@ footer div:first-of-type a {
 
 
 @media screen and (min-width: 700px) {
+
+    body {
+        overflow-x: hidden;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: none;
+    }
+
+    .desktop-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 75px;
+        width: 90vw;
+        margin: 10px auto 0px;
+    }
+
+    .desktop-header  .links {
+        margin: 0px 15px;
+        min-width: 50%;
+    }
+
+    .desktop-header .invite {
+        display: inline-block;
+        padding: 15px 30px;
+        border-radius: 50px;
+        background: linear-gradient(to right, hsl(136, 65%, 51%) , hsl(233, 26%, 24%));
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .desktop-header a {
+        display: inline-block;
+        margin: 0px 15px ;
+        padding-bottom: 35px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .desktop-header a:hover {
+        cursor: pointer;
+        border-bottom: 3px solid hsl(136, 65%, 51%);
+    }
+
+    .hero-section {
+        display: none;
+    }
+
+    .hero {
+        width: 100vw;
+        margin: 0px auto;
+        background-color: hsl(220, 16%, 98%);
+        display: block;
+    }
+
+    .hero .herocontainer {
+        width: 95vw;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .hero .herocontainer .image {
+        max-width: 100%;
+        height: 100%;
+        background-image: url('images/bg-intro-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .hero .herocontainer .image img {
+        text-align: center;
+        width: 100%;
+        max-height: 100%;
+        position: relative;
+        margin-top: -20%;
+        right: -25%;
+    }
+
+    .hero .herocontainer .text {
+        padding: 25px 75px;
+        width: 40%;
+    }
+
+    .hero .herocontainer .text h1 {
+        margin: 25px 0px;
+        font-size: 3rem;
+    }
+    
+    .hero .herocontainer .text p {
+        font-size: 1.5rem;
+        line-height: 125%;
+    }
+    
+    .why-choose p.choose {
+        width: 45%;
+        line-height: 125%;
+    }
+
     .articles-container , .choose-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-self: start;
+        width: 99%;
+        margin: auto;
     }
 
-    .articles-container div {
-        /* width: 400px; */
+    .articles-container div , .choose-container div {
         width: 25%;
-        margin: 50px 25px;
+        margin: 50px 15px;
+    }
+
+    .choose-container div:first-child {
+        margin-left: 0;
+    }
+
+    .why-choose {
+        text-align: left;
+        padding: 100px;
+    }
+
+    .why-choose p {
+        padding: 0;
+    }
+
+    footer .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 25px;
+    }
+
+    footer .footer-container .footerlogo {
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    footer .footer-container div {
+        text-align: left;
+    }
+
+    footer .footer-container .right {
+        text-align: right;
+        min-width: 40%;
     }
 }
