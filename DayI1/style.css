@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    padding: 25px;
+    text-align: center;
+    background-color: rgb(135, 136, 135);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 25px auto;
+    width: 90vw;
+    font-weight: bolder;
+    
+}
+
+p {
+    font-size: 1.75rem;
+    margin: auto auto 15px;
+    width: 90vw;
+    font-weight: bold;
+}
+
+#img-div {
+    width: 90vw;
+    margin: 15px auto;
+    background-color: white;
+}
+
+#img-div img {
+    width: 75%;
+    height: auto;
+    margin: 15px auto;
+}
+
+figcaption {
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+
+#tribute-info {
+    width: 90vw;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(192, 190, 188);
+}
+
+#tribute-info div {
+    width: 50%;
+    padding: 25px 50px;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 125%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 25px 0;
+}
+
+a {
+    color: white;
+    
+}
+
+.ghlink {
+    font-size: 1rem; 
+    font-weight: normal;
+    margin-top: 50px;
+}
+
+.wplink {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 50px;
+} 
+
+@media screen and (max-width: 750px) {
+    #tribute-info {
+        flex-direction: column;
+    }
+
+    #tribute-info div {
+        width: 90%;
+        margin: 0px auto;
+        padding-bottom: 0px;
+    }
+}
